@@ -1,0 +1,27 @@
+body
+{
+    background-color: rgb(151, 211, 211);
+}
+#logo{
+    width: 150px;
+
+}
+ul li a{
+    padding: 15px;
+    /* position: absolute; */
+    /* left: 5.56%;
+    right: 2.45%;
+    top: 31.48%; */
+    /* bottom: 59.47%; */
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 44px;
+    /* identical to box height */
+
+    text-decoration-line: line-through;
+
+    color: #FFFCFC;
+}
