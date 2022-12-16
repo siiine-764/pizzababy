@@ -151,9 +151,9 @@
   }
   
   .container11 {
+    z-index: -1 !important;
       position: fixed;
       transform: translate(0px, 350px);
-
     width: 10px;
     height: 10px;
   }
@@ -166,7 +166,7 @@
     stroke-width: 2;
     stroke: black;
     font-size: 70px;
-    fill: #fff;
+    fill: black;
   }
   
   .phone {
@@ -175,6 +175,7 @@
     top: 50%;
     padding-top: 10px;
     line-height: 1px;
+    font-size: 80px;
   }
   
   @media screen and (min-width: 60em) {

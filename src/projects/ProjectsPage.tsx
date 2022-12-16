@@ -4,6 +4,8 @@ import "./ProjectsPage.css";
 import {MOCK_PROJECTS} from './MockProjects';
 import { Project } from "./Project";
 
+
+
 function ProjectsPage() {
     return (
         <div className="container">
@@ -35,7 +37,7 @@ function ProjectsPage() {
                 </div>
             <>
             <pre>
-                {JSON.stringify(MOCK_PROJECTS)}
+                {JSON.stringify(MOCK_PROJECTS, null, ' ')}
                 </pre>
             </>
             </div>

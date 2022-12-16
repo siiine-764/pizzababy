@@ -4,7 +4,9 @@ body
 }
 #logo{
     width: 150px;
-
+}
+ul {
+    list-style-type: none;
 }
 ul li a{
     padding: 15px;

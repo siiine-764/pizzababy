@@ -4,21 +4,6 @@
     flex-wrap: wrap;
     padding: 20px;
 }
-.contact h1{
-    position: relative;
-    
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 555;
-    font-size: 64px;
-    line-height: 77px;
-    letter-spacing: 0.05em;
-    font-feature-settings: 'numr' on, 'dnom' on, 'kern' off;
-    
-    color: #000000;
-    font-variation-settings: 'slnt' 0;
-
-}
 .contact a{
     position: relative;
 

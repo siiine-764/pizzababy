@@ -1,35 +1,38 @@
 import React from 'react';
-import bild from './assets/bild.jpeg';
 import ProjectsPage from './projects/ProjectsPage';
 import ProjectsCart from './projectscart/Projectscart';
 import TextCircle from './TextCircle/TextCircle';
 import CompnentContact from './componentcontact/ComponentContact';
-import Pagehome from './PageHome/pagehome';
+import ComponentCartHamburger from './componentcarthamburger/ComponentCartHamburger';
 import './App.css';
 
+import { HashRouter as Router, Routes, Route } from 'react-router-dom'
+import Sidebar from './sidebar/Sidebar'
+import Home from './pages/Home';
+import Team from './pages/Team';
+import Tasks from './pages/Tasks';
+import Chats from './pages/Chats';
+import Analytics from './pages/Analytics';
 function App() {
   return (
     <div className="App">
+      <Router>
+        <Sidebar />
+        <Routes>
+          <Route path='/' element={<Home />} />
+          <Route path='/team' element={<Team />} />
+          <Route path='/tasks' element={<Tasks />} />
+          <Route path='/chats' element={<Chats />} />
+          <Route path='/analytics' element={<Analytics />} />
+        </Routes>
+      </Router>
+
       <ProjectsPage />
-      <header className="App-header">
-        <img src={bild} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React!!!!!
-        </a>
-      </header>
       <ProjectsCart />
+      <ComponentCartHamburger />
       <TextCircle />
       <CompnentContact />
-      <Pagehome />
-    </div>    
+    </div>
   );
 }
 

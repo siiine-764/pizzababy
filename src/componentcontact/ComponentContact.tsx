@@ -5,8 +5,8 @@ function CompnentContact() {
     return (
         <div className="container">
         <div className="row">
-            <div className="col-12 contact">
-                <h1>CONTACT#3</h1>
+            <div className="col-12">
+                <h1 className="titre">CONTACT#3</h1>
              </div>
             <div className="col-12 contact">
                 <a href="tel: +2124558658668">+212(0)669569695</a>
