@@ -23,7 +23,7 @@
       grid-template-columns: repeat(4, 1fr);
     }
   }
-  
+
   .card {
     position: relative;
     display: flex;

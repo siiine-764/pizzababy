@@ -4,6 +4,7 @@ import ProjectsCart from './projectscart/Projectscart';
 import TextCircle from './TextCircle/TextCircle';
 import CompnentContact from './componentcontact/ComponentContact';
 import ComponentCartHamburger from './componentcarthamburger/ComponentCartHamburger';
+import Testcompenent from './test/Testcompenent';
 import './App.css';
 
 import { HashRouter as Router, Routes, Route } from 'react-router-dom'
@@ -32,6 +33,7 @@ function App() {
       <ComponentCartHamburger />
       <TextCircle />
       <CompnentContact />
+      <Testcompenent />
     </div>
   );
 }
