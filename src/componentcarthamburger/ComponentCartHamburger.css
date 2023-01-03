@@ -197,6 +197,12 @@
 	transform-origin: left;
 	transform: scaleX(0);
 }
+
+@media screen and (max-width: 480px) {
+  .titre{
+  font-size: 3.5em;
+  }
+}
 @keyframes letters {
 	100% {
 		font-variation-settings: 'wght' 700;

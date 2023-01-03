@@ -13,8 +13,8 @@ function ComponentCartHamburger() {
     return (
 
       <div id="hamburger">
-        <div className="container" id="compnentpizza">
-          <div className="row" id="pizza">
+        <div className="container" id="compnentpizza ">
+          <div className="row" id="hamburger">
 
           <h1 className="titre">HAMBURGER#2</h1>
             <main className="page-content">
