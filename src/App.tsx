@@ -15,8 +15,11 @@ import Team from './pages/Team';
 import Tasks from './pages/Tasks';
 import Chats from './pages/Chats';
 import Analytics from './pages/Analytics';
+
+
 function App() {
   return (
+    
     <div className="App">
       {/* <Router>
         <Sidebar />
@@ -31,6 +34,7 @@ function App() {
 
       <ProjectsPage />
       <Componentslider />
+      
       <ProjectsCart />
       <ComponentCartHamburger />
       <TextCircle />

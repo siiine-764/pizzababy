@@ -1,6 +1,9 @@
 body{
   background-color: aquamarine;
 }
+html {
+  scroll-behavior: smooth;
+}
 .App {
   text-align: center;
 }

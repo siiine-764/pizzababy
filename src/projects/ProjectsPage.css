@@ -2,9 +2,9 @@ body
 {
     background-color: rgb(151, 211, 211);
 }
-#controller{
+/* #controller{
 background-image: url("../assets/meshgradient.png");
-}
+} */
 #logo{
     width: 150px;
     display: block;
@@ -35,4 +35,12 @@ ul li a{
     text-decoration-line: line-through;
 
     color: #FFFCFC;
+}
+
+#jsmarqueewrapper{
+    width: 100000px; transform: translateX(0px); animation: 29.17s linear 0s infinite normal none paused marqueeAnimation-3994000;
+}
+
+#jsmarquee{
+margin-right: 0px; float: left;
 }
