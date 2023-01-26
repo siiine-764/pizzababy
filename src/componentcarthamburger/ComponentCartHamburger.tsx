@@ -1,3 +1,4 @@
+import { useState, useEffect } from 'react';
 import React from "react";
 import "./ComponentCartHamburger.css"
 import imgduplicate from "../assets/duplicate.jpg";
@@ -10,6 +11,9 @@ function ComponentCartHamburger() {
       audio.play();
     });
   });
+
+  const [showOverlay, setShowOverlay] = useState(false);
+
     return (
 
       <div id="hamburger">
@@ -27,8 +31,8 @@ function ComponentCartHamburger() {
                     <p className="copy">Check out all of these gorgeous mountain trips with beautiful views of, you guessed it, the mountains</p>
                   </div>
                 </div>
-                <button className="btn btnn">Order</button>
-  
+
+                <button className="btn btnn" onClick={() => setShowOverlay(true)}>Order</button>
               </div>
               <div>
                 <div className="cardhamburger">
@@ -70,6 +74,15 @@ function ComponentCartHamburger() {
             </main>
           </div>
         </div>
+        {
+      showOverlay && (
+        <div className="overlay1">
+          <span className="closebtn1" onClick={() => setShowOverlay(false)} title="Close Overlay">×</span>
+          <div className="overlay-content1">
+            <h1>dddd</h1>
+          </div>
+        </div>
+      )}
       </div>
     );
   }

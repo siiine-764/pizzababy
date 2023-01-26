@@ -225,3 +225,75 @@
 		transform: scaleX(1);
 	}
 }
+
+.overlay1 {
+  height: 50%;
+  width: 100%;
+  margin-top: 50px;
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  right: 0;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0, 0.9);
+}
+@media only screen and (max-width: 600px) {
+  .overlay1 {
+      height: 100%;
+      width: 100%;
+      position: fixed;
+      z-index: 1;
+      top: 0;
+      right: 0;
+      background-color: rgb(0,0,0);
+      background-color: rgba(0,0,0, 0.9);
+    }
+}
+.overlay-content1 {
+  position: relative;
+  top: 46%;
+  width: 80%;
+  text-align: center;
+  margin-top: 50px;
+  margin: auto;
+}
+
+.overlay1 .closebtn1 {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+  cursor: pointer;
+  color: white;
+}
+
+.overlay1 .closebtn1:hover {
+  color: #ccc;
+}
+
+.overlay1 input[type=text] {
+  padding: 15px;
+  font-size: 17px;
+  border: none;
+  float: left;
+  width: 80%;
+  background: white;
+}
+
+.overlay1 input[type=text]:hover {
+  background: #f1f1f1;
+}
+
+.overlay1 button {
+  float: left;
+  width: 20%;
+  padding: 15px;
+  background: #ddd;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+}
+
+.overlay1 button:hover {
+  background: #bbb;
+}
