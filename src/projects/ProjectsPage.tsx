@@ -6,6 +6,18 @@ import logomenu from "../assets/menu.png";
 import "./ProjectsPage.css";
 import {MOCK_PROJECTS} from './MockProjects';
 import { Project } from "./Project";
+import careerimg1 from "../assets/placeimg_500_300_arch3.jpg";
+function MyOtherComponent() {
+  return (
+    <div className="careeer">
+      This is the component that will be displayed when the button is clicked!
+      <img src={careerimg1}></img>
+    </div>
+  );
+}
+
+
+
 
 
 function ProjectsPage() {
@@ -22,6 +34,12 @@ function ProjectsPage() {
   }, [theme]);
 
 const [showOverlay, setShowOverlay] = useState(false);
+
+const handleClick = () => {
+  setShowComponent(true);
+};
+
+const [showComponent, setShowComponent] = useState(false);
 
     return (
         
@@ -85,7 +103,10 @@ const [showOverlay, setShowOverlay] = useState(false);
             <a href="#hamburger">HAMBURGER#2</a>
         </li>
         <li>
-            <a href="#componentcontact">CAREER#3</a>
+            <div>
+      <button onClick={handleClick}>CAREER</button>
+      {showComponent && <MyOtherComponent />}
+    </div>
         </li>      
         <li>
             <a href="#componentcontact">FEATURES#4</a>
