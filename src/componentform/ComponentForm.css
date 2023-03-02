@@ -1,0 +1,38 @@
+#fill_form{
+    color: white;
+    font-size: 25px;
+}
+
+#bar_images{
+    background-color: aqua;
+    margin-top: -300px;
+      display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#pizzasimple {
+    position: relative;
+    display: block;
+    margin: auto;
+    margin-top: 0px;
+
+  }
+
+#pizzasimple1 {
+    position: absolute;
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    padding: auto;
+    z-index: 2;
+  }
+
+  #pizzasimple2 {
+    position: absolute;
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    padding: auto;
+    width: 250px;
+    z-index: 1;
+  }

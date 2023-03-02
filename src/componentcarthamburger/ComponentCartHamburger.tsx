@@ -2,7 +2,7 @@ import React from "react";
 import { useState, useEffect } from 'react';
 import "./ComponentCartHamburger.css";
 import imgduplicate from "../assets/duplicate.jpg";
-
+import ComponentForm from "../componentform/ComponentForm";
 
 function ComponentCartHamburger() {
   const audio = new Audio("https://www.fesliyanstudios.com/play-mp3/387");
@@ -81,9 +81,7 @@ function ComponentCartHamburger() {
         <div className="overlay1">
           <span className="closebtn1" onClick={() => setShowOverlay(false)} title="Close Overlay">×</span>
           <div className="overlay-content1">
-            <h1>dddd</h1>
-            <video src='../assets/videos/video.mp4' width="750" height="500" controls>
-            </video>
+            <ComponentForm/>
           </div>
         </div>
       )}

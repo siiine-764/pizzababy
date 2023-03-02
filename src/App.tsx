@@ -38,44 +38,13 @@ function App() {
 
       <ProjectsPage />
       <Componentslider />
-      
+
       <ProjectsCart />
       <ComponentCartHamburger />
       <TextCircle />
       <CompnentContact />
       <Testcompenent />
       <ComponentForm/>
-
-      <div className='container'>
-        <div className='row'>
-          <div id='beispiel_div'>
-            <img src={beispiel1} alt="" id='beispiel'/>
-          </div>
-
-          <div id='beispiel2_div'>
-              <img src={beispiel2} alt="" id='beispiel2'/>
-          </div>
-
-          <div id='beispiel3_div'>
-              <img src={beispiel3} alt="" id='beispiel3'/>
-          </div>
-
-
-          <div id='career3'>
-            <h1>Career #3</h1>
-            </div>
-
-            <div id='txt'>
-              <p>
-              Bei uns bekommt Ihr spannende Projekte und echte Verantwortung. Von Anfang an. Einen Arbeitsplatz samt flexiblen Vertrauensarbeitszeiten in der Stuttgarter City mit Dachterrasse und Kolleg:innen ohne Chichi-Getue – oder unsichtbaren Kolleg:innen aus dem Homeoffice oder mit Notebook auf dem Schoß aus der Hängematte in Asien.
-              <br></br>
-              <br></br>
-
-              Denn wir fördern digitales Nomadentum: Mit Zuschüssen zu Reisekosten und Co-Workingspaces auf der ganzenWelt. Für uns zählt das Ergebnis, nicht die Stempelkarte.
-              </p>
-            </div>
-      </div>
-    </div>
   </div>
   );
 }
