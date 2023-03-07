@@ -2,6 +2,7 @@ import { useEffect } from 'react';
 import React, { useState } from 'react';
 import "./ComponentForm.css";
 import pizzasimple from "../assets/pngegg1.png";
+import tomate from "../assets/tomate.png";
 import mortadela from "../assets/pngegg2.png";
 import mozzarella_cheese from "../assets/mozzarella_cheese.png";
 
@@ -16,6 +17,7 @@ function ComponentForm() {
       };
       const [showImage, setShowImage] = useState(false);
       const [showImage1, setShowImage1] = useState(false);
+      const [showImage2, setShowImage2] = useState(false);
 
       function handleCheckboxChange() {
         setShowImage(!showImage);
@@ -25,13 +27,16 @@ function ComponentForm() {
         setShowImage1(!showImage1);
       }
 
+      function handleCheckboxChange2() {
+        setShowImage2(!showImage2);
+      }
       return (
         <form onSubmit={handleSubmit}>
           <div id='bar_images'>
             <img src={pizzasimple} alt="pizzasimple" id='pizzasimple'></img>
             {showImage && <img src={mortadela}  id='pizzasimple1'  alt="Image" />}
-
             {showImage1 && <img src={mozzarella_cheese}  id='pizzasimple2'  alt="Image" />}
+            {showImage2 && <img src={tomate}  id='pizzasimple1'  alt="Image" />}
            </div>
            <label>
         <input type="checkbox" checked={showImage1}onChange={handleCheckboxChange1} />
@@ -54,6 +59,11 @@ function ComponentForm() {
           <label>
         <input type="checkbox" checked={showImage}onChange={handleCheckboxChange} />
         Show Image
+      </label>
+
+      <label>
+        <input type="checkbox" checked={showImage2}onChange={handleCheckboxChange2} />
+        Show Image2
       </label>
           <button type="submit">Submit</button>
         </form>
